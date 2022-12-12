@@ -1,0 +1,14 @@
+{
+  "name": "im5_dariogartmann_deepfakes",
+  "version": "1.0.0",
+  "description": "Webseite im Rahmen des Moduls Interaktive Medien 5 an der Fachhochschule Graubuenden",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dario Gartmann",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
+}
