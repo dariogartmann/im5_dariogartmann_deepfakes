@@ -35,9 +35,17 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 750px) {
     /* For mobile phones: */
-    .half, .third, .quarter {
-        width: 100%;
+    
+    .flex-container {
+        .half, .third, .quarter {
+            width: 100%;
+        }
+    }
+
+    .wrapper {
+        padding: 0 16px;
+        width: calc(100% - 32px);
     }
 }
