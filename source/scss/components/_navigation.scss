@@ -31,13 +31,66 @@
             padding-left: 4px;
 
             a {
-                color: $COLOR_ACC_LIGHT;
+                color: $COLOR_MAIN_LIGHT;
                 text-decoration: none;
                 transition: all 300ms ease;
                 line-height: 64px;
 
                 &:hover {
-                    color: $COLOR_ACC_DARK;
+                    color: $COLOR_ACC_MID;
+                }
+            }
+
+
+            &.top_navigation__mobilebars {
+                display: none;
+            }
+        }
+    }
+}
+
+.navigation_mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 750px) {
+    .navbar {
+        ul.top_navigation {
+            li {
+                display: none;
+
+                &.top_navigation__mobilebars {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .navigation_mobile {
+        display: block;
+        position: fixed;
+        width: 280px;
+        height: 100%;
+        height: 100vh;
+        right: -280px;
+        top: 0;
+
+        border-left: 1px solid $COLOR_ACC_DARK;
+
+        transition: right 300ms ease-in-out;
+
+        ul {
+            margin-top: 80px;
+            text-align: right;
+            list-style-type: none;
+
+            li {
+                a {
+                    color: $COLOR_MAIN_LIGHT;
+                    text-decoration: none;
+                    transition: all 300ms ease;
+                    line-height: 48px;
+                    padding: 8px 16px;
                 }
             }
         }

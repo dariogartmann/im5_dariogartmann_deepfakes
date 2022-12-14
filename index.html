@@ -9,6 +9,7 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="assets/css/app.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header>
@@ -19,13 +20,23 @@
                         <li><a class="scrollable" href="#definition">Definition</a></li>
                         <li><a class="scrollable" href="#tipps">Tipps & Tricks</a></li>
                         <li><a class="scrollable" href="#video">Video</a></li>
+                        <li class="top_navigation__mobilebars"><a href="javascript:void(0);" id="mobile_menu_button"><i class="fa fa-bars"></i></a></li>
                     </ul>
+                    
                     <div class="clearfloat"></div>
                 </div>
-            </nav>       
+            </nav>
 
+            <!-- Mobile Navigation -->
+            <nav class="navigation_mobile" id="navigation_mobile" >
+                <ul>
+                    <li><a class="mobile_navlink" href="#definition">Definition</a></li>
+                    <li><a class="mobile_navlink" href="#tipps">Tipps & Tricks</a></li>
+                    <li><a class="mobile_navlink" href="#video">Video</a></li>
+                </ul>
+            </nav>
         </header>
-        <main>
+        <main class="main_content">
             <header class="banner-container">
                 <div class="wrapper">
                     <h2 class="banner__title">Fake Media - Wem kann ich noch trauen?</h2>
@@ -77,10 +88,12 @@
             </section>
             <section class="pagesection pagesection--padded" id="video">
                 <div class="wrapper">
-                    <h2>Mehr Details gewünscht?</h2>
+                    <h2>Mehr Details gewünscht?</h2>$
+                    <!-- 
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/7ijiHt0PpE0?controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
+                    -->
                 </div>
             </section>
         </main>
