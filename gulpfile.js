@@ -6,7 +6,6 @@ const postcss = require('gulp-postcss');
 const cssnano = require('cssnano');
 
 var uglify = require('gulp-uglify');
-var prompt = require('gulp-prompt');
 var browserSync = require('browser-sync').create();
 var autoprefixer = require('gulp-autoprefixer');
  
