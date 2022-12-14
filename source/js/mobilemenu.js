@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     let isMenuOpen = false; // State of the menu
 
-    if(menuButton == null) {
+    if(menuButton == null || mobileButtons.length == 0) {
+        // Required DOM structure not available. Stop execution
         return;
     }
 
