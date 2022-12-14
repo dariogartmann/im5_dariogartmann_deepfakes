@@ -25,7 +25,6 @@
   "dependencies": {
     "esm": "^3.2.25",
     "gulp-postcss": "^9.0.1",
-    "gulp-prompt": "^1.2.0",
-    "vinyl-ftp": "^0.6.1"
+    "gulp-prompt": "^1.2.0"
   }
 }

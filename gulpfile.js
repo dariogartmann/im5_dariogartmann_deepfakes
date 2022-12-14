@@ -7,7 +7,6 @@ const cssnano = require('cssnano');
 
 var uglify = require('gulp-uglify');
 var prompt = require('gulp-prompt');
-var ftp = require( 'vinyl-ftp' );
 var browserSync = require('browser-sync').create();
 var autoprefixer = require('gulp-autoprefixer');
  
@@ -32,36 +31,7 @@ gulp.task('js', function () {
         .pipe(browserSync.reload({stream: true}));
 });
 
-
-gulp.task('deploy', gulp.series('js','css'), function() {
-    gulp.src('/').pipe(prompt.prompt({
-        type: 'password',
-        name: 'pass',
-        message: 'Please enter your password'
-    }, function(res){
-        var conn = ftp.create( {
-            host:     'ftp.informatik.sg',
-            user:     'gruppe1-ina4a@informatik.sg',
-            password: res.pass,
-            parallel: 10
-        } );
-
-        var globs = [
-            './assets/**',
-            'index.html',
-            'favicon.png'
-        ];
-
-        // using base = '.' will transfer everything to /public_html correctly
-        // turn off buffering in gulp.src for best performance
-        return gulp.src( globs, { base: '.', buffer: false } )
-            .pipe( conn.newer( '/' ) ) // only upload newer files
-            .pipe( conn.dest( '/' ) );
-    }));
-    
-});
- 
-gulp.task('serve', gulp.series('js','css'), function() {
+gulp.task('build', gulp.series('js','css'), function() {
     browserSync.init({
         server: {
             baseDir: '.'
@@ -75,4 +45,4 @@ gulp.task('serve', gulp.series('js','css'), function() {
     });
 });
 
-gulp.task('default', gulp.series('serve'));
+gulp.task('default', gulp.series('build'));
