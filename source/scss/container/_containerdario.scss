@@ -1,0 +1,43 @@
+// Wrapper to determine width of content
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+// A section of the onepager
+.pagesection {
+    background-color: $COLOR_MAIN_DARK;
+    color: $COLOR_MAIN_LIGHT;
+
+    &.pagesection--padded{
+        padding-top: 64px;
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+
+    .full {
+        width: 100%;
+    }
+
+    .half {
+        width: 50%;
+    }
+
+    .third {
+        width: 33.33333%;
+    }
+
+    .quarter {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .half, .third, .quarter {
+        width: 100%;
+    }
+}

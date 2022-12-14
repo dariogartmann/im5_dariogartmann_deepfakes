@@ -1,0 +1,41 @@
+.navbar {
+    width: 100%;
+    height: 64px;
+    z-index: 1000;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: $COLOR_MAIN_DARK;
+    border-bottom: 1px solid $COLOR_ACC_DARK;
+
+    h1.sitetitle {
+        float: left;
+        line-height: 64px;
+        padding: 0;
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    ul.top_navigation {
+        list-style-type: none;
+        float: right;
+        margin: 0;
+
+        li {
+            display: inline-block;
+
+            a {
+                color: $COLOR_ACC_LIGHT;
+                text-decoration: none;
+                transition: all 300ms ease;
+                line-height: 64px;
+
+                &:hover {
+                    color: $COLOR_ACC_DARK;
+                }
+            }
+        }
+    }
+}

@@ -7,8 +7,25 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dario Gartmann",
-  "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.0"
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-changed": "^4.0.3",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "node": "^19.2.0",
+    "sass": "^1.56.2"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "gulp-postcss": "^9.0.1",
+    "gulp-prompt": "^1.2.0",
+    "vinyl-ftp": "^0.6.1"
   }
 }

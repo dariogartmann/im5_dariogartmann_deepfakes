@@ -1,0 +1,15 @@
+.banner-container {
+    display: block;
+    position: relative;
+    padding-top: 110px;
+
+    height: 640px;
+    height: 65vh;
+
+    background-image: url("../img/banner-01.png");
+    background-size: cover;
+
+    h2.banner__title {
+        font-size: 6rem;
+    }
+}
