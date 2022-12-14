@@ -6,9 +6,9 @@
     height: 640px;
     height: 65vh;
 
-    background-image: url("../img/banner-01.png");
-    background-image: url("https://source.unsplash.com/pREq0ns_p_E");
+    background-image: url("../img/machine-learning-2.jpg");
     background-size: cover;
+    background-position: center;
 
     h2.banner__title {
         font-size: 6rem;
@@ -19,7 +19,7 @@
 @media only screen and (max-width: 750px) {
     .banner-container{
         height: 450px;
-        height: 40vh;
+        height: 50vh;
         h2.banner__title {
             font-size: 3rem;
         }
