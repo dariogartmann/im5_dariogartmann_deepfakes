@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             mainContent.style.right = '0';
             mobileMenu.style.right = '-280px'
 
+            menuButton.innerHTML = '<i class="fa fa-bars"></i>'
             isMenuOpen = false;
         }else{
             // open menu
@@ -65,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             mainContent.style.right = '280px';
             mobileMenu.style.right = "0"
 
+            menuButton.innerHTML = '<i class="fa fa-times"></i>'
             isMenuOpen = true;
         }
     }
