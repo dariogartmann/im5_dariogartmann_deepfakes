@@ -10,7 +10,11 @@
     color: $COLOR_MAIN_LIGHT;
 
     &.pagesection--padded{
-        padding-top: 64px;
+        padding: 48px 0;
+    }
+
+    &.pagesection--colored {
+        background-color: $COLOR_ACC_DARK;
     }
 }
 
@@ -18,33 +22,42 @@
     display: flex;
     flex-flow: row wrap;
 
-    .full {
-        width: 100%;
-        margin-bottom: 16px;
-    }
+    .flex-column {
+        margin-bottom: 32px;
 
-    .half {
-        width: 50%;
-        margin-bottom: 16px;
-    }
+        &:nth-of-type(odd).half {
+            padding-left: 16px;
+        }
 
-    .third {
-        width: 33.33333%;
-        margin-bottom: 16px;
-    }
+        &:nth-of-type(even).half {
+            padding-right: 16px;
+        }
 
-    .quarter {
-        width: 25%;
-        margin-bottom: 16px;
+        &.full {
+            width: 100%;
+        }
+    
+        &.half {
+            width: calc(50% - 16px);
+            
+        }
+    
+        &.quarter {
+            width: 25%;
+        }
     }
 }
 
 @media only screen and (max-width: 750px) {
-    /* For mobile phones: */
-    
     .flex-container {
-        .half, .third, .quarter {
-            width: 100%;
+        .flex-column {
+            &:nth-of-type(even).half, &:nth-of-type(odd).half {
+                padding: 0;
+            }
+
+            &.half, &.quarter {
+                width: 100%;
+            }
         }
     }
 

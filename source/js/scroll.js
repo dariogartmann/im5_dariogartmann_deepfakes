@@ -1,5 +1,10 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-    // smooth scrolling for anchors with class="scrollable"
+    
+    /**
+     * Iterarte over all a-tags with class scrollable.
+     * 
+     * Change scrolling behaviour to be smooth
+     */
     document.querySelectorAll('a[href^="#"].scrollable').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
