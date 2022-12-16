@@ -11,6 +11,7 @@
     background-position: center;
 
     h2.banner__title {
+        margin-top: 128px;
         font-size: 6rem;
     }
 }
@@ -20,7 +21,9 @@
     .banner-container{
         height: 450px;
         height: 50vh;
+
         h2.banner__title {
+            margin-top: 64px;
             font-size: 3rem;
         }
     } 
