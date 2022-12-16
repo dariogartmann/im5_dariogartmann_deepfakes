@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let menuButton = document.getElementById(BUTTON_ID);
     let mainContent = document.getElementsByClassName(MAIN_CONTENT_CLASS)[0]; // yes I know, a bit hacky...  but in my case it is always here so hopefully no errors
     let mobileMenu = document.getElementById(MOBILE_NAV_ID)
-    let mobileButtons = document.getElementsByClassName(MOBILE_NAV_LINK_CLASS);
+    let mobileNavLinks = document.getElementsByClassName(MOBILE_NAV_LINK_CLASS);
 
     let isMenuOpen = false; // State of the menu
 
-    if(menuButton == null || mobileButtons.length == 0) {
+    if(menuButton == null || mobileNavLinks.length == 0) {
         // Required DOM structure not available. Stop execution
         return;
     }
@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
      * 
      * Don't stop propagation for link to work.
      */
-    for (var index = 0; index < mobileButtons.length; index++) {
-        var button = mobileButtons.item(index);
+    for (var index = 0; index < mobileNavLinks.length; index++) {
+        var button = mobileNavLinks.item(index);
         
         button.addEventListener('click', function(event) {
             event.preventDefault();

@@ -67,6 +67,6 @@ gulp.task('default', gulp.series('build'));
 /**
  * Start Browsersync and watch files for updates
  * 
- * Note: Doesn't want to work with the gulp.task() syntax
+ * Note: Doesn't want to work with the gulp.task() syntax, tried many many times ;(
  */
 exports.watch = gulp.series(watch);

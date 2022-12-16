@@ -4,12 +4,15 @@
         <title>Deepfakes in den Medien</title>
         <meta name="author" content="Dario Gartmann">
         <meta name="description" content="Deepfakes">
+        <meta name="keywords" content="Deepfake, AI, Medienmanipulation">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/favicon.png">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="assets/css/app.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="assets/css/app.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header>
@@ -50,6 +53,25 @@
                     <p>a video of a person in which their face or body has been digitally altered so that they appear to be someone else, typically used maliciously or to spread false information.</p>
                 </div>
             </section>
+            <section class="pagesection pagesection--padded" id="definition-fortsetzung">
+                <div class="wrapper">
+                    <div class="flex-container">
+                        <div class="flex-column full">
+                            <h2>Was genau sind Deepfakes?</h2>
+                            <p>Im Grunde wird gefälschtes Videomaterial von Personen als Deepfake bezeichnet. Dieses kann von künstlicher Intelligenz erstellt worden sein. In Anwendungen wie Film haben Deepfakes durchaus positive Anwendungszwecke, doch leider werden solche Technologien auch immer wieder gerne für finstere Zwecke missbraucht.</p>
+                        </div>
+                        <div class="flex-column half">
+                            <h3>Deepfakes in der Schweiz</h3>
+                            <p>Die Tabelle rechts zeigt auf, wie sich die Vorkommen von Deepfakes verändert haben.</p>
+                        </div>
+                        <div class="flex-column half">
+                            <!-- todo chartjs -->
+                            <canvas id="deepfakeAmountChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section class="pagesection pagesection--padded" id="tipps">
                 <div class="wrapper">
                     <div class="flex-container">
@@ -64,10 +86,10 @@
                             </p>
                         </div>
                         <div class="flex-column half">
-                            <img src="./assets/img/network_graphic.jpg" alt="Grafische interpretation eines neuralen Netzwerks"/>
+                            <img src="./assets/img/network_graphic.jpg" alt="Grafische interpretation eines neuralen Netzwerks">
                         </div>
                         <div class="flex-column half">
-                            <img src="./assets/img/global_map.jpg" alt="Weltkarte mit als rote Kreise markierten Hotspots"/>
+                            <img src="./assets/img/global_map.jpg" alt="Weltkarte mit als rote Kreise markierten Hotspots">
                         </div>
                         <div class="flex-column half">
                             <span class="numbercircle">2</span>
@@ -84,7 +106,7 @@
                             </p>
                         </div>
                         <div class="flex-column half">
-                            <img src="./assets/img/videoaufnahme_glitch.jpg" alt="Langzeitbeleuchtung einer Strasse mit vielen Reflektionen und Glitches"/>
+                            <img src="./assets/img/videoaufnahme_glitch.jpg" alt="Langzeitbeleuchtung einer Strasse mit vielen Reflektionen und Glitches">
                         </div>
                     </div>
                 </div>
@@ -104,6 +126,7 @@
                 <p>&copy; Dario Gartmann 2022</p>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="assets/js/app.js"></script>
     </body>
 </html>
