@@ -1,7 +1,7 @@
 @import "variables";
 @import "typography";
 @import "container/containerdario";
-@import "components/home";
+@import "components/banner";
 @import "components/navigation";
 
 body {
@@ -36,14 +36,4 @@ img {
         height: 100%;
         border: 0;
     }
-}
-
-.numbercircle {
-    display: block;
-    border-radius: 50%;
-    height: 16px;
-    width: 16px;
-    padding: 4px;
-    border: 2px solid $COLOR_MAIN_LIGHT;
-    text-align: center;
 }

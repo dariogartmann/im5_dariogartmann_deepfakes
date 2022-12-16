@@ -27,3 +27,13 @@ p, a, span, label {
 p {
     line-height: 1.2rem;
 }
+
+.numbercircle {
+    display: block;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+    padding: 4px;
+    border: 2px solid $COLOR_MAIN_LIGHT;
+    text-align: center;
+}

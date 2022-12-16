@@ -16,6 +16,10 @@
     &.pagesection--colored {
         background-color: $COLOR_ACC_DARK;
     }
+
+    &.pagesection--lighten {
+        background-color: $COLOR_MAIN_DARK_LIGHTEN;
+    }
 }
 
 .flex-container {
